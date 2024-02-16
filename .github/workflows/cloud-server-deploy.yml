@@ -17,5 +17,8 @@ jobs:
           username: ${{ secrets.CLOUD_USERNAME }}
           password: ${{ secrets.CLOUD_PASSWORD }}
           port: ${{ secrets.CLOUD_PORT }}
-          script: mkdir test1 && mkdir test2
+          script: |
+            mkdir 1
+            mkdir 2
+            mkdir 3
 
