@@ -7,7 +7,7 @@ on:
 
 jobs:
   deploy:
-    name: Build
+    name: Build and deploy app
     runs-on: ubuntu-latest
     steps:
       - name: executing remote ssh commands using password
@@ -25,6 +25,6 @@ jobs:
             git pull origin main
             docker compose down
             docker rmi testcloudserver-app
-            docker compose up
+            docker compose up -d
 
 
