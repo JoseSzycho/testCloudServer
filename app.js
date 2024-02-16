@@ -7,7 +7,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/sayHello', (req, res) => {
-  res.status(200).json('sayHello page');
+  res.status(200).json('hola Valeria');
 });
 
 app.listen(3000, () => {
