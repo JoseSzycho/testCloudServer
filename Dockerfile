@@ -8,8 +8,8 @@ COPY . /home/app
 
 WORKDIR /home/app
 
-RUN npm install
+RUN npm install && npx tsc
 
 EXPOSE 3000
 
-CMD ["node", "/home/app/app.js"]
+CMD ["node", "/home/app/dist/app.js"]
