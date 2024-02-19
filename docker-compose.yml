@@ -10,4 +10,4 @@ services:
 
 networks:
   testNetwork:
-    driver: bridge
+    external: true
