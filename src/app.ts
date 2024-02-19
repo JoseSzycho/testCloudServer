@@ -58,8 +58,7 @@ fastify.get('/fastAdd', async function handler(request, reply) {
 });
 
 try {
-    fastify.listen({ port: 3001 });
+    fastify.listen({ port: 3001, host: '0.0.0.0' });
 } catch (err) {
-    fastify.log.error(err);
-    process.exit(1);
+    console.log(err);
 }
