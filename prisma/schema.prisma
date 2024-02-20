@@ -7,7 +7,7 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = "postgresql://usuario:contrasena@149.50.136.107:5432//mydb?schema=public&connection_limit=8"
+  url      = "postgresql://usuario:contrasena@postgres-db:5432//mydb?schema=public&connection_limit=8"
 }
 
 model User {
@@ -15,4 +15,7 @@ model User {
   email String  
   name  String?
   age Int?
+  secondName String?
+  thirdName String?
+  fourthName String?
 }
