@@ -8,6 +8,14 @@ const prisma = new PrismaClient();
 // Express app
 const app: Express = express();
 
+app.get('/redirect', async (req, res) => {
+    res.redirect(307,'http://google.com');
+});
+
+app.get('/holaClaudio', (req, res) => {
+    res.status(200).json('Claudio Capo')
+})
+
 app.get('/add', async (req, res) => {
     try {
         const createdData = await prisma.user.create({
